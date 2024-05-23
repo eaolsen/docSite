@@ -15,6 +15,15 @@
       margin: 0 1rem;
     }
   </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="docs.html">Docs</a>
+    <a href="contact.html">Contact</a>
+  </header>
+  <main>
+  </main>
   <script src="marked.min.js"></script>
   <script>
     const markdownContent = `
@@ -27,15 +36,6 @@
     console.log('HTML content:', htmlContent);
     document.querySelector('main').innerHTML = htmlContent;
   </script>
-</head>
-<body>
-  <header>
-    <a href="index.html">Home</a>
-    <a href="docs.html">Docs</a>
-    <a href="contact.html">Contact</a>
-  </header>
-  <main>
-  </main>
 </body>
 </html>
 
