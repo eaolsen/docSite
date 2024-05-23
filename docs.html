@@ -20,9 +20,11 @@
     const markdownContent = `
 # Welcome to our Docs page!
 
-This is a Markdown document.
+[ollamaDocs](https://aiaiai-docsite.c52tra.easypanel.host/docs/ollamadocs.html)
 `;
+    console.log('Markdown content:', markdownContent);
     const htmlContent = marked(markdownContent);
+    console.log('HTML content:', htmlContent);
     document.querySelector('main').innerHTML = htmlContent;
   </script>
 </head>
@@ -36,6 +38,4 @@ This is a Markdown document.
   </main>
 </body>
 </html>
-```
-</rewritten_file><|eot_id|>
 

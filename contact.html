@@ -22,7 +22,9 @@
 
 This is a Markdown document.
 `;
+    console.log('Markdown content:', markdownContent);
     const htmlContent = marked(markdownContent);
+    console.log('HTML content:', htmlContent);
     document.querySelector('main').innerHTML = htmlContent;
   </script>
 </head>
@@ -36,6 +38,4 @@ This is a Markdown document.
   </main>
 </body>
 </html>
-```
-</rewritten_file><|eot_id|>
 
