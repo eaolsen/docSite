@@ -15,6 +15,16 @@
       margin: 0 1rem;
     }
   </style>
+  <script src="marked.min.js"></script>
+  <script>
+    const markdownContent = `
+# Welcome to our Home page!
+
+This is a Markdown document.
+`;
+    const htmlContent = marked(markdownContent);
+    document.querySelector('main').innerHTML = htmlContent;
+  </script>
 </head>
 <body>
   <header>
@@ -23,8 +33,9 @@
     <a href="contact.html">Contact</a>
   </header>
   <main>
-    <h1>Welcome to our Home page!</h1>
   </main>
 </body>
 </html>
+```
+</rewritten_file><|eot_id|>
 

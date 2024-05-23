@@ -15,6 +15,16 @@
       margin: 0 1rem;
     }
   </style>
+  <script src="marked.min.js"></script>
+  <script>
+    const markdownContent = `
+# Welcome to our Contact page!
+
+This is a Markdown document.
+`;
+    const htmlContent = marked(markdownContent);
+    document.querySelector('main').innerHTML = htmlContent;
+  </script>
 </head>
 <body>
   <header>
@@ -23,7 +33,6 @@
     <a href="contact.html">Contact</a>
   </header>
   <main>
-    <h1>Welcome to our Contact page!</h1>
   </main>
 </body>
 </html>
